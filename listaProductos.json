@@ -18,6 +18,41 @@
     },
 
     {
+        "id": 2,
+        "imagen": "2-NBA.png",
+        "tipo": "headphone",
+        "nombre": "Beats Studio3 Wireless Headphones - NBA Collection - Warriors Royal",
+        "precio": "$349.95",
+        "color": "b_azul.png",
+        "descripcion": "Acérquese a su música y demuestre amor por los Warriors Royal con la colección Beats NBA. Estos audífonos inalámbricos Beats Studio3, usados por algunos de tus jugadores favoritos, presentan los colores auténticos y los logotipos icónicos de tu equipo. El resultado final es una colección diseñada solo para los fanáticos, que honra el espíritu y la emoción que conforman los Warriors Royal. Es oficial: el juego nunca sonará igual",
+        "car1": "Sonido premium con acústica afinada y Pure ANC",
+        "car1Des": "Los audífonos inalámbricos Beats Studio3 brindan una experiencia auditiva de primera calidad con cancelación de ruido adaptativa pura (Pure ANC) para bloquear activamente el ruido externo y la calibración de audio en tiempo real para preservar la claridad, el alcance y la emoción.",
+        "car2": "Apple W1 Chip ",
+        "car2Des": "La incorporación del eficiente chip W1 brinda una configuración y un cambio sin interrupciones para sus dispositivos Apple.",
+        "car3": "Mantente conectado. Permanece en la zona",
+        "car3Des": "Realice llamadas, salte canciones, controle el volumen y active Siri usando los convenientes controles multifunción en la oreja.",
+        "Contenido": ["01 Auriculares inalámbricos Beats Studio3","02 Estuche de transporte","03 Cable RemoteTalk de 3,5 mm", "04 Cable de carga USB universal"]
+    },
+
+    {
+        "id": 3,
+        "imagen": "3-bluetooth.png",
+        "tipo": "bluetooth",
+        "nombre": "BeatsX",
+        "precio": "$99.95",
+        "color": "b_negra.png",
+        "descripcion": "Aptos para su vida, los auriculares BeatsX son el compañero inalámbrico perfecto. Con hasta 8 horas de duración de la batería y carga rápida de combustible, estos auriculares le permiten experimentar un sonido auténtico y claro durante todo el día.",
+        "car1": "Apple W1 Chip ",
+        "car1Des": "Beats y Apple están cambiando la forma en que escuchas música con la introducción de la tecnología Apple W1 en BeatsX.",
+        "car2": "5 minutos de carga = 2 horas de reproducción",
+        "car2Des": "Con Fast Fuel, 5 minutos de carga te dan 2 horas de reproducción cuando la batería está baja.",
+        "car3": "Contesta llamadas con RemoteTalk",
+        "car3Des": "Con RemoteTalk compatible con Siri, puede atender llamadas con un micrófono con cable y reproducir música con controles fáciles de usar.",
+        "Contenido": ["01 Auriculares BeatsX",
+            "02 Eartips con cuatro opciones de tamaño","03 Guía de inicio rápido", "04 Lightning al cable de carga USB-A"]
+    },
+
+    {
 
     }
 
