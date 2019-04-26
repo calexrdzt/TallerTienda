@@ -1,0 +1,25 @@
+[
+    {
+        "id": 1,
+        "imagen": "1-earphones.png",
+        "tipo": "earphone",
+        "nombre": "urBeats3",
+        "precio": "$59.95",
+        "color": "b_negra.png",
+        "descripcion": "Diseñados para su vida, los auriculares urbeats3 con cable presentan un diseño acústico afinado para brindar una experiencia auditiva excepcional. Su ajuste ergonómico óptimo proporciona comodidad durante todo el día, mientras que el cable plano sin enredos y los auriculares magnéticos ofrecen una fácil portabilidad, para que pueda mantenerse en movimiento.",
+        "car1": "Eleva tu música",
+        "car1Des": "Los auriculares con cable urBeats3 presentan un diseño acústico afinado a través de un controlador alineado axialmente para ofrecer una experiencia auditiva excepcional.",
+        "car2": "Hechos para ti",
+        "car2Des": "Diseñados para su vida, los audífonos urBeats3 con cable tienen un ajuste ergonómico óptimo que combina un estilo elegante con el sonido Beats icónico para usar todo el día.",
+        "car3": "Permanece en el camino",
+        "car3Des": "A donde sea que te lleve el día, puedes mantenerte conectado con RemoteTalk. Responde llamadas con un micrófono incorporado, controla tu música e incluso activa Siri con solo presionar un botón.",
+        "Contenido": ["01 auriculares urbeats3",
+            "02 Eartips con cuatro opciones de tamaño","03 Guía de inicio rápido", "04 Tarjeta de Garantía"]
+    },
+
+    {
+
+    }
+
+
+]
