@@ -5,7 +5,7 @@
         "tipo": "earphone",
         "nombre": "urBeats3",
         "precio": "$59.95",
-        "color": "b_negra.png",
+        "color": "negro", //Llamarse solo negro o rojo para despues llamar la imagen 
         "descripcion": "Diseñados para su vida, los auriculares urbeats3 con cable presentan un diseño acústico afinado para brindar una experiencia auditiva excepcional. Su ajuste ergonómico óptimo proporciona comodidad durante todo el día, mientras que el cable plano sin enredos y los auriculares magnéticos ofrecen una fácil portabilidad, para que pueda mantenerse en movimiento.",
         "car1": "Eleva tu música",
         "car1Des": "Los auriculares con cable urBeats3 presentan un diseño acústico afinado a través de un controlador alineado axialmente para ofrecer una experiencia auditiva excepcional.",
@@ -23,7 +23,7 @@
         "tipo": "headphone",
         "nombre": "Beats Studio3 Wireless Headphones - NBA Collection - Warriors Royal",
         "precio": "$349.95",
-        "color": "b_azul.png",
+        "color": "azul",
         "descripcion": "Acérquese a su música y demuestre amor por los Warriors Royal con la colección Beats NBA. Estos audífonos inalámbricos Beats Studio3, usados por algunos de tus jugadores favoritos, presentan los colores auténticos y los logotipos icónicos de tu equipo. El resultado final es una colección diseñada solo para los fanáticos, que honra el espíritu y la emoción que conforman los Warriors Royal. Es oficial: el juego nunca sonará igual",
         "car1": "Sonido premium con acústica afinada y Pure ANC",
         "car1Des": "Los audífonos inalámbricos Beats Studio3 brindan una experiencia auditiva de primera calidad con cancelación de ruido adaptativa pura (Pure ANC) para bloquear activamente el ruido externo y la calibración de audio en tiempo real para preservar la claridad, el alcance y la emoción.",
@@ -40,7 +40,7 @@
         "tipo": "bluetooth",
         "nombre": "BeatsX",
         "precio": "$99.95",
-        "color": "b_negra.png",
+        "color": "negro",
         "descripcion": "Aptos para su vida, los auriculares BeatsX son el compañero inalámbrico perfecto. Con hasta 8 horas de duración de la batería y carga rápida de combustible, estos auriculares le permiten experimentar un sonido auténtico y claro durante todo el día.",
         "car1": "Apple W1 Chip ",
         "car1Des": "Beats y Apple están cambiando la forma en que escuchas música con la introducción de la tecnología Apple W1 en BeatsX.",
@@ -50,6 +50,163 @@
         "car3Des": "Con RemoteTalk compatible con Siri, puede atender llamadas con un micrófono con cable y reproducir música con controles fáciles de usar.",
         "Contenido": ["01 Auriculares BeatsX",
             "02 Eartips con cuatro opciones de tamaño","03 Guía de inicio rápido", "04 Lightning al cable de carga USB-A"]
+    },
+
+    {
+        "id": 4,
+        "imagen": "4-NBA.png",
+        "tipo": "headphone",
+        "nombre": "Beats Studio3 Wireless Headphones - NBA Collection - Celtics Black",
+        "precio": "$349.95",
+        "color": "negro",
+        "descripcion": "Acérquese a su música y demuestre amor por los Celtics con la colección Beats NBA. Estos audífonos inalámbricos Beats Studio3, usados por algunos de tus jugadores favoritos, presentan los colores auténticos y los logotipos icónicos de tu equipo. El resultado final es una colección diseñada solo para los fanáticos, que honra el espíritu y la emoción que conforman los Celtics. Es oficial: el juego nunca sonará igual",
+        "car1": "Sonido premium con acústica afinada y Pure ANC",
+        "car1Des": "Los audífonos inalámbricos Beats Studio3 brindan una experiencia auditiva de primera calidad con cancelación de ruido adaptativa pura (Pure ANC) para bloquear activamente el ruido externo y la calibración de audio en tiempo real para preservar la claridad, el alcance y la emoción.",
+        "car2": "Apple W1 Chip ",
+        "car2Des": "La incorporación del eficiente chip W1 brinda una configuración y un cambio sin interrupciones para sus dispositivos Apple.",
+        "car3": "Mantente conectado. Permanece en la zona",
+        "car3Des": "Realice llamadas, salte canciones, controle el volumen y active Siri usando los convenientes controles multifunción en la oreja.",
+        "Contenido": ["01 Auriculares inalámbricos Beats Studio3","02 Estuche de transporte","03 Cable RemoteTalk de 3,5 mm", "04 Cable de carga USB universal"]
+    },
+
+    {
+        "id": 5,
+        "imagen": "5-headphones.png",
+        "tipo": "headphone",
+        "nombre": "Beats EP",
+        "precio": "$129.95",
+        "color": "negro",
+        "descripcion": "Empieza a escuchar. Ingresa al sonido premium",
+        "car1": "Ingresa al sonido premium",
+        "car1Des": "Los audífonos Beats EP en la oreja brindan un sonido sintonizado de manera magistral.",
+        "car2": "Construido para la vida",
+        "car2Des": "Beats EP es resistente, ligero y cómodo. Su marco duradero está reforzado con acero inoxidable y los deslizadores verticales ajustables permiten un confort personalizado.",
+        "car3": "Agarra y vete",
+        "car3Des": "Beats EP está hecho para ir a donde quieras. Su diseño sin batería ofrece reproducción ilimitada y un cable fijo sin problemas le permite concentrarse en la música.",
+        "Contenido": ["01 Auriculares Beats EP","02 Estuche de transporte","03 Guía de inicio rápido", "04 Cable de carga USB universal"]
+    },
+    
+
+    {
+        "id": 7,
+        "imagen": "7-bluetooth.png",
+        "tipo": "earphone",
+        "nombre": "PowerBeats Pro",
+        "precio": "$ 249.95",
+        "color": "negro",
+        "descripcion": "Auriculares totalmente inalámbricos de alto rendimiento.",
+        "car1": "Auriculares de entrenamiento de alto rendimiento",
+        "car1Des": "Los auriculares Powerbeats Pro están diseñados para revolucionar tus entrenamientos. Con cero cables para retenerte, siempre tendrás tu música para motivarte.",
+        "car2": "Suena como un profesional",
+        "car2Des": "Escuchamos a los atletas reales y escuchamos que nada era más importante que el sonido. Powerbeats Pro ofrece un sonido potente y equilibrado.",
+        "car3": "Mantente conectado desde la distancia",
+        "car3Des": "Con Clase 1 Bluetooth ® tecnología, estos auriculares inalámbricos ofrecen mayor alcance y menos abandonos",    
+        "Contenido": ["01 Auriculares PowerBeats Pro","02 Estuche de transporte","03 Eartips con cuatro opciones de tamaño", "04 Cable de carga Lightning a USB-A"]
+    },
+
+    {
+        "id": 8,
+        "imagen": "8-headphones.png",
+        "tipo": "headphone",
+        "nombre": "Beats Pro",
+        "precio": "$399.95",
+        "color": "negro",
+        "descripcion": "La revolución en el sonido",
+        "car1": "Toma el sonido en serio",
+        "car1Des": "Utilizados por artistas y productores para mezclar en los principales estudios, los auriculares Beats Pro ofrecen un sonido auténtico que le permite redescubrir su música.",
+        "car2": "Altos claros y bajos profundos",
+        "car2Des": "Con una sólida plataforma de sonido interior, estos audífonos te permiten escuchar sonidos intensos y el tipo de bajos que resuenan profundamente en tu pecho.",
+        "car3": "Siente la diferencia",
+        "car3Des": "Los audífonos Beats Pro están hechos con un marco de aluminio en forma de pistola y orejeras de cuero de alta calidad para mayor comodidad.",    
+        "Contenido": ["01 Auriculares Beats Pro","02 cable enrollado de 4.2 mm con conector de cierre por torsión de 3.5 mm","03 Cable RemoteTalk para controlar tu música y atender llamadas.", "04 Cable de micrófono y control remoto en línea (las características pueden variar)"]
+    },
+
+
+
+    {
+        "id": 9,
+        "imagen": "9-NBA.png",
+        "tipo": "headphone",
+        "nombre": "Beats Studio3 Wireless Headphones - NBA Collection - Lakers Purple",
+        "precio": "$349.95",
+        "color": "violeta",
+        "descripcion": "Acérquese a su música y demuestre amor por los Lakers con la colección Beats NBA. Estos audífonos inalámbricos Beats Studio3, usados por algunos de tus jugadores favoritos, presentan los colores auténticos y los logotipos icónicos de tu equipo. El resultado final es una colección diseñada solo para los fanáticos, que honra el espíritu y la emoción que conforman los Lakers. Es oficial: el juego nunca sonará igual",
+        "car1": "Sonido premium con acústica afinada y Pure ANC",
+        "car1Des": "Los audífonos inalámbricos Beats Studio3 brindan una experiencia auditiva de primera calidad con cancelación de ruido adaptativa pura (Pure ANC) para bloquear activamente el ruido externo y la calibración de audio en tiempo real para preservar la claridad, el alcance y la emoción.",
+        "car2": "Apple W1 Chip ",
+        "car2Des": "La incorporación del eficiente chip W1 brinda una configuración y un cambio sin interrupciones para sus dispositivos Apple.",
+        "car3": "Mantente conectado. Permanece en la zona",
+        "car3Des": "Realice llamadas, salte canciones, controle el volumen y active Siri usando los convenientes controles multifunción en la oreja.",
+        "Contenido": ["01 Auriculares inalámbricos Beats Studio3","02 Estuche de transporte","03 Cable RemoteTalk de 3,5 mm", "04 Cable de carga USB universal"]
+    },
+
+
+    {
+        "id": 10,
+        "imagen": "10-bluetooth.png",
+        "tipo": "earphone",
+        "nombre": "Beats X",
+        "precio": "$349.95",
+        "color": "negro",
+        "descripcion": "Acérquese a su música y demuestre amor por los Lakers con la colección Beats NBA. Estos audífonos inalámbricos Beats Studio3, usados por algunos de tus jugadores favoritos, presentan los colores auténticos y los logotipos icónicos de tu equipo. El resultado final es una colección diseñada solo para los fanáticos, que honra el espíritu y la emoción que conforman los Lakers. Es oficial: el juego nunca sonará igual",
+        "car1": "Sonido premium con acústica afinada y Pure ANC",
+        "car1Des": "Los audífonos inalámbricos Beats Studio3 brindan una experiencia auditiva de primera calidad con cancelación de ruido adaptativa pura (Pure ANC) para bloquear activamente el ruido externo y la calibración de audio en tiempo real para preservar la claridad, el alcance y la emoción.",
+        "car2": "Apple W1 Chip ",
+        "car2Des": "La incorporación del eficiente chip W1 brinda una configuración y un cambio sin interrupciones para sus dispositivos Apple.",
+        "car3": "Mantente conectado. Permanece en la zona",
+        "car3Des": "Realice llamadas, salte canciones, controle el volumen y active Siri usando los convenientes controles multifunción en la oreja.",
+        "Contenido": ["01 Auriculares inalámbricos Beats Studio3","02 Estuche de transporte","03 Cable RemoteTalk de 3,5 mm", "04 Cable de carga USB universal"]
+    },
+
+    {
+        "id": 13,
+        "imagen": "13-NBA.png",
+        "tipo": "headphone",
+        "nombre": "Beats Studio3 Wireless Headphones - NBA Collection - Rockets Red",
+        "precio": "$349.95",
+        "color": "rojo",
+        "descripcion": "Acérquese a su música y demuestre amor por los Rockets con la colección Beats NBA. Estos audífonos inalámbricos Beats Studio3, usados por algunos de tus jugadores favoritos, presentan los colores auténticos y los logotipos icónicos de tu equipo. El resultado final es una colección diseñada solo para los fanáticos, que honra el espíritu y la emoción que conforman los Rockets. Es oficial: el juego nunca sonará igual",
+        "car1": "Sonido premium con acústica afinada y Pure ANC",
+        "car1Des": "Los audífonos inalámbricos Beats Studio3 brindan una experiencia auditiva de primera calidad con cancelación de ruido adaptativa pura (Pure ANC) para bloquear activamente el ruido externo y la calibración de audio en tiempo real para preservar la claridad, el alcance y la emoción.",
+        "car2": "Apple W1 Chip ",
+        "car2Des": "La incorporación del eficiente chip W1 brinda una configuración y un cambio sin interrupciones para sus dispositivos Apple.",
+        "car3": "Mantente conectado. Permanece en la zona",
+        "car3Des": "Realice llamadas, salte canciones, controle el volumen y active Siri usando los convenientes controles multifunción en la oreja.",
+        "Contenido": ["01 Auriculares inalámbricos Beats Studio3","02 Estuche de transporte","03 Cable RemoteTalk de 3,5 mm", "04 Cable de carga USB universal"]
+    },
+
+    {
+        "id": 15,
+        "imagen": "15-NBA.png",
+        "tipo": "headphone",
+        "nombre": "Beats Studio3 Wireless Headphones - NBA Collection - 76ers Blue",
+        "precio": "$349.95",
+        "color": "azul",
+        "descripcion": "Acérquese a su música y demuestre amor por los 76ers con la colección Beats NBA. Estos audífonos inalámbricos Beats Studio3, usados por algunos de tus jugadores favoritos, presentan los colores auténticos y los logotipos icónicos de tu equipo. El resultado final es una colección diseñada solo para los fanáticos, que honra el espíritu y la emoción que conforman los 76ers. Es oficial: el juego nunca sonará igual",
+        "car1": "Sonido premium con acústica afinada y Pure ANC",
+        "car1Des": "Los audífonos inalámbricos Beats Studio3 brindan una experiencia auditiva de primera calidad con cancelación de ruido adaptativa pura (Pure ANC) para bloquear activamente el ruido externo y la calibración de audio en tiempo real para preservar la claridad, el alcance y la emoción.",
+        "car2": "Apple W1 Chip ",
+        "car2Des": "La incorporación del eficiente chip W1 brinda una configuración y un cambio sin interrupciones para sus dispositivos Apple.",
+        "car3": "Mantente conectado. Permanece en la zona",
+        "car3Des": "Realice llamadas, salte canciones, controle el volumen y active Siri usando los convenientes controles multifunción en la oreja.",
+        "Contenido": ["01 Auriculares inalámbricos Beats Studio3","02 Estuche de transporte","03 Cable RemoteTalk de 3,5 mm", "04 Cable de carga USB universal"]
+    },
+
+    {
+        "id": 17,
+        "imagen": "17-NBA.png",
+        "tipo": "headphone",
+        "nombre": "Beats Studio3 Wireless Headphones - NBA Collection - Raptors White",
+        "precio": "$349.95",
+        "color": "blanco",
+        "descripcion": "Acérquese a su música y demuestre amor por los Raptors con la colección Beats NBA. Estos audífonos inalámbricos Beats Studio3, usados por algunos de tus jugadores favoritos, presentan los colores auténticos y los logotipos icónicos de tu equipo. El resultado final es una colección diseñada solo para los fanáticos, que honra el espíritu y la emoción que conforman los Raptors. Es oficial: el juego nunca sonará igual",
+        "car1": "Sonido premium con acústica afinada y Pure ANC",
+        "car1Des": "Los audífonos inalámbricos Beats Studio3 brindan una experiencia auditiva de primera calidad con cancelación de ruido adaptativa pura (Pure ANC) para bloquear activamente el ruido externo y la calibración de audio en tiempo real para preservar la claridad, el alcance y la emoción.",
+        "car2": "Apple W1 Chip ",
+        "car2Des": "La incorporación del eficiente chip W1 brinda una configuración y un cambio sin interrupciones para sus dispositivos Apple.",
+        "car3": "Mantente conectado. Permanece en la zona",
+        "car3Des": "Realice llamadas, salte canciones, controle el volumen y active Siri usando los convenientes controles multifunción en la oreja.",
+        "Contenido": ["01 Auriculares inalámbricos Beats Studio3","02 Estuche de transporte","03 Cable RemoteTalk de 3,5 mm", "04 Cable de carga USB universal"]
     },
 
     {
