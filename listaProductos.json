@@ -5,7 +5,7 @@
         "tipo": "earphone",
         "nombre": "urBeats3",
         "precio": "$59.95",
-        "color": "negro", //Llamarse solo negro o rojo para despues llamar la imagen 
+        "color": "negro", /*Llamarse solo negro o rojo para despues llamar la imagen*/ 
         "descripcion": "Diseñados para su vida, los auriculares urbeats3 con cable presentan un diseño acústico afinado para brindar una experiencia auditiva excepcional. Su ajuste ergonómico óptimo proporciona comodidad durante todo el día, mientras que el cable plano sin enredos y los auriculares magnéticos ofrecen una fácil portabilidad, para que pueda mantenerse en movimiento.",
         "car1": "Eleva tu música",
         "car1Des": "Los auriculares con cable urBeats3 presentan un diseño acústico afinado a través de un controlador alineado axialmente para ofrecer una experiencia auditiva excepcional.",
@@ -85,6 +85,23 @@
         "car3Des": "Beats EP está hecho para ir a donde quieras. Su diseño sin batería ofrece reproducción ilimitada y un cable fijo sin problemas le permite concentrarse en la música.",
         "Contenido": ["01 Auriculares Beats EP","02 Estuche de transporte","03 Guía de inicio rápido", "04 Cable de carga USB universal"]
     },
+
+    {
+        "id": 6,
+        "imagen": "6-kit.png",
+        "tipo": "earphone",
+        "nombre": "Kit iphone to USB",
+        "precio": "$60.95",
+        "color": "negro",
+        "descripcion": "Lleva la música a todas partes",
+        "car1": "Nunca te quedes sin música",
+        "car1Des": "Con los distintos conversores podras acceder a cualquier dispositivo",
+        "car2": "Hazlo simple",
+        "car2Des": "Con solo conectar podras disfrutar del mejor sonido en HD",
+        "car3": "Alta definición",
+        "car3Des": "Los altos, los medios y los bajos en su lugar",
+        "Contenido": ["01 Cable Beats","02 Estuche de transporte","03 Guía de inicio rápido", "04 Cable de carga USB universal"]
+    },
     
 
     {
@@ -159,6 +176,40 @@
     },
 
     {
+        "id": 11,
+        "imagen": "11-earphones.png",
+        "tipo": "earphone",
+        "nombre": "urBeats3 with Lightning Connector",
+        "precio": "$59.95",
+        "color": "negro",
+        "descripcion": "Diseñados para su vida, los auriculares urBeats 3 con conector Lightning presentan un diseño acústico afinado para ofrecer una experiencia auditiva excepcional.",
+        "car1": "Eleva tu música",
+        "car1Des": "Los auriculares urBeats 3  con conector Lightning presentan un diseño acústico afinado mediante un controlador alineado axialmente para ofrecer una experiencia auditiva excepcional.",
+        "car2": "Hecho para ti",
+        "car2Des": "Presentan un ajuste ergonómico óptimo que combina un estilo elegante con el sonido Beats icónico para usar todo el día. ",
+        "car3": "Permanece en la zona",
+        "car3Des": "A donde sea que te lleve el día, puedes mantenerte conectado con RemoteTalk.",
+        "Contenido": ["01 Auriculares  Urbeats3 ","02 Eartips con cuatro opciones de tamaño","03  Guía de inicio rápido", "04 Tarjeta de Garantía"]
+    },
+
+    {
+        "id": 12,
+        "imagen": "12-kit.png",
+        "tipo": "headphone",
+        "nombre": "Kit Studio Beats3",
+        "precio": "$99.95",
+        "color": "negro",
+        "descripcion": "En cualquier momento y en cualquier lugar, el kit Studio Beats3 te ayudará a escuchar tu música favorita",
+        "car1": "Mantente sintonizado",
+        "car1Des": "No pierdas nunca la señal de tu musica, con este kit puedes conectarlo de cualquier manera a cualquier dispositivo",
+        "car2": "Hecho para ti",
+        "car2Des": "Te ofrece muchas posibilidades para poder disfrutar de tu mejor música",
+        "car3": "Permanece en la zona",
+        "car3Des": " Una variedad de opciones de audífonos proporcionan un ajuste individualizado para la comodidad y el aislamiento del ruido.",
+        "Contenido": ["01 Kit Beats Studio3","02 Cable de 3.5 mm","03  Guía de inicio rápido", "04 Tarjeta de Garantía"]
+    },
+
+    {
         "id": 13,
         "imagen": "13-NBA.png",
         "tipo": "headphone",
@@ -173,6 +224,24 @@
         "car3": "Mantente conectado. Permanece en la zona",
         "car3Des": "Realice llamadas, salte canciones, controle el volumen y active Siri usando los convenientes controles multifunción en la oreja.",
         "Contenido": ["01 Auriculares inalámbricos Beats Studio3","02 Estuche de transporte","03 Cable RemoteTalk de 3,5 mm", "04 Cable de carga USB universal"]
+    },
+
+
+    {
+        "id": 14,
+        "imagen": "14-speaker.png",
+        "tipo": "speaker",
+        "nombre": "Beats Pill+",
+        "precio": "$179.95",
+        "color": "negro",
+        "descripcion": "Portable Wireless Speaker",
+        "car1": "Diseñado a tu alrededor",
+        "car1Des": "La interfaz sin sentido te lleva a tu música rápidamente. Reproduzca, pause, salte pistas y controle sus llamadas telefónicas con solo tocar el botón multifunción b",
+        "car2": "Sonido más grande que su tamaño",
+        "car2Des": "El sistema de cruce de 2 vías estéreo activo crea un campo de sonido optimizado para un rango dinámico y claridad en todos los géneros de música.",
+        "car3": "Beats Pill +  App",
+        "car3Des": "Descarga la aplicación Beats Pill + * para desbloquear las funciones que te colocan a ti y a tus amigos en el centro de tu música como nunca antes.",
+        "Contenido": ["01 Beats Pill + altavoz","02 1.5 m Cable de carga Lightning a USB-A","03  12.5W PSU", "04 Tarjeta de Garantía"]
     },
 
     {
@@ -193,6 +262,23 @@
     },
 
     {
+        "id": 16,
+        "imagen": "16-headphone.png",
+        "tipo": "headphone",
+        "nombre": "Beats Studio 3 Wireless - Negro Mate",
+        "precio": "$349.95",
+        "color": "negro",
+        "descripcion": "Experimenta tu música como nunca antes",
+        "car1": "Escucha tu música, no el ruido",
+        "car1Des": "La cancelación de ruido adaptativa pura (Pure ANC) bloquea las distracciones, para que pueda acercarse más a su música.",
+        "car2": "Carga en minutos con Fast Fuel",
+        "car2Des": "Con Fast Fuel, solo toma unos minutos de carga para obtener hasta 3 horas de juego.",
+        "car3": "Escucha todo el dia",
+        "car3Des": "Disfrute de su lista de reproducción sin interrupción, ya que la carga completa dura hasta 22 horas, o hasta 40 horas con Pure ANC apagado.",
+        "Contenido": ["01 Auriculares inalámbricos Beats Studio 3","02 Estuche de transporte","03 Cable RemoteTalk de 3,5 mm", "04 Cable de carga USB universal"]
+    },
+
+    {
         "id": 17,
         "imagen": "17-NBA.png",
         "tipo": "headphone",
@@ -207,6 +293,57 @@
         "car3": "Mantente conectado. Permanece en la zona",
         "car3Des": "Realice llamadas, salte canciones, controle el volumen y active Siri usando los convenientes controles multifunción en la oreja.",
         "Contenido": ["01 Auriculares inalámbricos Beats Studio3","02 Estuche de transporte","03 Cable RemoteTalk de 3,5 mm", "04 Cable de carga USB universal"]
+    },
+
+    {
+        "id": 18,
+        "imagen": "18-headphone.png",
+        "tipo": "headphone",
+        "nombre": "Beats Studio 3 Wireless - Negro Brillante",
+        "precio": "$349.95",
+        "color": "negro",
+        "descripcion": "Experimenta tu música como nunca antes",
+        "car1": "Escucha tu música, no el ruido",
+        "car1Des": "La cancelación de ruido adaptativa pura (Pure ANC) bloquea las distracciones, para que pueda acercarse más a su música.",
+        "car2": "Carga en minutos con Fast Fuel",
+        "car2Des": "Con Fast Fuel, solo toma unos minutos de carga para obtener hasta 3 horas de juego.",
+        "car3": "Escucha todo el dia",
+        "car3Des": "Disfrute de su lista de reproducción sin interrupción, ya que la carga completa dura hasta 22 horas, o hasta 40 horas con Pure ANC apagado.",
+        "Contenido": ["01 Auriculares inalámbricos Beats Studio 3","02 Estuche de transporte","03 Cable RemoteTalk de 3,5 mm", "04 Cable de carga USB universal"]
+    },
+
+    {
+        "id": 19,
+        "imagen": "19-disney.png",
+        "tipo": "headphone",
+        "nombre": "Beats Studio 3 Wireless - Disney",
+        "precio": "$349.95",
+        "color": "blanco",
+        "descripcion": "Experimenta tu música como nunca antes",
+        "car1": "Escucha tu música, no el ruido",
+        "car1Des": "La cancelación de ruido adaptativa pura (Pure ANC) bloquea las distracciones, para que pueda acercarse más a su música.",
+        "car2": "Carga en minutos con Fast Fuel",
+        "car2Des": "Con Fast Fuel, solo toma unos minutos de carga para obtener hasta 3 horas de juego.",
+        "car3": "Escucha todo el dia",
+        "car3Des": "Disfrute de su lista de reproducción sin interrupción, ya que la carga completa dura hasta 22 horas, o hasta 40 horas con Pure ANC apagado.",
+        "Contenido": ["01 Auriculares inalámbricos Beats Studio 3","02 Estuche de transporte","03 Cable RemoteTalk de 3,5 mm", "04 Cable de carga USB universal"]
+    },
+
+    {
+        "id": 20,
+        "imagen": "20-kit.png",
+        "tipo": "headphone",
+        "nombre": "Kit Beats Pro",
+        "precio": "$99.95",
+        "color": "negro",
+        "descripcion": "En cualquier momento y en cualquier lugar, el kit Studio Beats3 te ayudará a escuchar tu música favorita",
+        "car1": "Mantente sintonizado",
+        "car1Des": "No pierdas nunca la señal de tu musica, con este kit puedes conectarlo de cualquier manera a cualquier dispositivo",
+        "car2": "Hecho para ti",
+        "car2Des": "Te ofrece muchas posibilidades para poder disfrutar de tu mejor música",
+        "car3": "Permanece en la zona",
+        "car3Des": " Una variedad de opciones de audífonos proporcionan un ajuste individualizado para la comodidad y el aislamiento del ruido.",
+        "Contenido": ["01 Kit Beats Studio3","02 Cable de 3.5 mm","03  Guía de inicio rápido", "04 Tarjeta de Garantía"]
     },
 
     {

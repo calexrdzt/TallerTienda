@@ -1,0 +1,27 @@
+{
+  "name": "taller2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mongodb": "^3.2.3",
+    "nodemon": "^1.18.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calexrdzt/TallerTienda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calexrdzt/TallerTienda/issues"
+  },
+  "homepage": "https://github.com/calexrdzt/TallerTienda#readme"
+}

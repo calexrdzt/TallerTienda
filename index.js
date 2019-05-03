@@ -23,6 +23,40 @@ setInterval(cambiar, 500);
 
 */
 
+var express = require('express');
+var exphbs = require('express-handlebars');
+
+var MongoClient = require('mongodb').MongoClient;
+var assert = require('assert');
+
+const url = 'mongodb://localhost:27017';
+const dbName = 'tienda';
+
+const client = new MongoClient(url);
+client.connect(function(err){
+  assert.equal(null,err);
+
+  console.log('Conectados a base de datos');
+  const db = client.db(dbName);
+
+  const productos = db.collection('productos');
+  productos.find({}).toArray(function(err,docs){
+    assert.equal(null,err);
+
+    console.log('Encontramos los documentos');
+    console.log(docs.length);
+  });
+
+
+  client.close();
+
+});
+
+
+var app = express();
+app.use(express.static('public'));
+app.use(express.urlencoded({extended: true}));
+
 function cargarPagina(){
 
   
