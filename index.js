@@ -28,120 +28,142 @@ var exphbs = require('express-handlebars');
 
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
+var db = null;
 
 const url = 'mongodb://localhost:27017';
 const dbName = 'tienda';
 
 const client = new MongoClient(url);
-client.connect(function(err){
-  assert.equal(null,err);
+client.connect(function (err) {
+  assert.equal(null, err);
 
   console.log('Conectados a base de datos');
-  const db = client.db(dbName);
+  db = client.db(dbName);
 
-  const productos = db.collection('productos');
-  productos.find({}).toArray(function(err,docs){
-    assert.equal(null,err);
 
+
+
+
+
+  app.get('/tienda', function(req, res) {
+    
+    const productos = db.collection('productos');
+  productos.find({}).toArray(function (err, docs) { /* Para organizar poner al lado del {} del find sort['Precio']*/
+    assert.equal(null, err);
+
+    var contexto = {
+      productos: docs /*Crear bariable "{{#each productos"}} Cada cosito con "this.titulo" - this.imagen 
+      {{/each}} */ 
+    };
+    res.render('carrito',contexto);
+    
     console.log('Encontramos los documentos');
     console.log(docs.length);
   });
+    
+  });
 
 
-  client.close();
+ // client.close();
 
 });
 
 
+
+
+
+
+
 var app = express();
 app.use(express.static('public'));
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({ extended: true }));
 
-function cargarPagina(){
 
-  
+
+function cargarPagina() {
+
   var hamburguesa = document.querySelector('.hamburguesa');
-  var activo =false;
+  var activo = false;
 
   function menuHamburguesa() {
     var opciones = document.querySelector('.barra__ul');
     var barra = document.querySelector('.barra');
     var click = false;
-    if(activo===false){
-      opciones.style.display='block';
-      opciones.style.widht='100%';
-      barra.style.display='block';
-      barra.style.height='auto';
-      opciones.style.transition='0..5s';
-      barra.style.transition='display 0.5s';
+    if (activo === false) {
+      opciones.style.display = 'block';
+      opciones.style.widht = '100%';
+      barra.style.display = 'block';
+      barra.style.height = 'auto';
+      opciones.style.transition = '0..5s';
+      barra.style.transition = 'display 0.5s';
       console.log("opciones");
-      activo=true;
-      click=true;
-    }else if(activo === true || click===false){
-      opciones.style.display='none';
-      opciones.style.widht='50%';
-      barra.style.display='flex';
-      barra.style.height='60px';
-      activo=false;
+      activo = true;
+      click = true;
+    } else if (activo === true || click === false) {
+      opciones.style.display = 'none';
+      opciones.style.widht = '50%';
+      barra.style.display = 'flex';
+      barra.style.height = '60px';
+      activo = false;
     }
-     
+
   }
- 
-   hamburguesa.addEventListener('click', menuHamburguesa);
+
+  hamburguesa.addEventListener('click', menuHamburguesa);
 
 
   var imgsGaleria = document.querySelectorAll('.cuarto__img');
-  var imgGrande = document.querySelector('.cuarto__video');   
-  
-  function recorrerImgsGalería(img, index){
-   
-    function clickGaleria(event){
+  var imgGrande = document.querySelector('.cuarto__video');
 
-    
+  function recorrerImgsGalería(img, index) {
+
+    function clickGaleria(event) {
+
+
       var url = img.style.backgroundImage;
-     
+
       imgGrande.style.backgroundImage = url;
-      imgGrande.style.height= '500px';
-      imgGrande.style.transition= "height 0.5s";
-      imgGrande.style.transition= "0.5s";
+      imgGrande.style.height = '500px';
+      imgGrande.style.transition = "height 0.5s";
+      imgGrande.style.transition = "0.5s";
 
 
 
-      console.log("clickFunciona",url + 'calex');
+      console.log("clickFunciona", url + 'calex');
     }
 
 
     img.addEventListener('click', clickGaleria);
   }
-  
-  imgsGaleria.forEach(recorrerImgsGalería);
-  
 
-  
+  imgsGaleria.forEach(recorrerImgsGalería);
+
+
+
   var colores = document.querySelectorAll('.quinto__color-col');
-  var beatColor = document.querySelector('.quinto__img');   
-  
-  function recorrerColores(col, index){
-   
-    function clickColor(event){ 
+  var beatColor = document.querySelector('.quinto__img');
+
+  function recorrerColores(col, index) {
+
+    function clickColor(event) {
 
       var url = col.style.backgroundImage;
       var urlD = url.split('/');
-      var urlPunto = urlD[urlD.length-1].split('.');
+      var urlPunto = urlD[urlD.length - 1].split('.');
 
-      beatColor.style.backgroundImage = "url(/Imagenes/"+ urlPunto[urlPunto.length-2]+ 'b' + '.png)';
-      beatColor.style.transition= "0.5s";
-      console.log("clickSobreElColor",urlD[urlD.length-1],"------------", urlPunto[urlPunto.length-2] );
+      beatColor.style.backgroundImage = "url(/Imagenes/" + urlPunto[urlPunto.length - 2] + 'b' + '.png)';
+      beatColor.style.transition = "0.5s";
+      console.log("clickSobreElColor", urlD[urlD.length - 1], "------------", urlPunto[urlPunto.length - 2]);
     }
 
 
     col.addEventListener('click', clickColor);
   }
-  
+
   colores.forEach(recorrerColores);
 
 
-  ScrollReveal().reveal('.primero__img',{ delay: 300 });
+  ScrollReveal().reveal('.primero__img', { delay: 300 });
   ScrollReveal().reveal('.primero__info');
 
 
@@ -150,26 +172,29 @@ function cargarPagina(){
     origin: 'bottom',
     opacity: null,
     reset: true,
-    useDelay:'always',
+    useDelay: 'always',
     duration: 1000,
-};
+  };
 
-ScrollReveal().reveal('.quinto__img', slideUp);
+  ScrollReveal().reveal('.quinto__img', slideUp);
 
-var slideDown = {
-  distance: '50%',
-  origin: 'top',
-  opacity: null,
-  reset: true,
-  useDelay:'always',
-  duration: 1000,
-};
+  var slideDown = {
+    distance: '50%',
+    origin: 'top',
+    opacity: null,
+    reset: true,
+    useDelay: 'always',
+    duration: 1000,
+  };
 
-ScrollReveal().reveal('.quinto__color', slideDown);
-ScrollReveal().reveal('.quinto__titulo', slideDown);
+  ScrollReveal().reveal('.quinto__color', slideDown);
+  ScrollReveal().reveal('.quinto__titulo', slideDown);
 
 
 
 }
 
-window.addEventListener('load',cargarPagina);
+window.addEventListener('load', cargarPagina);
+
+
+

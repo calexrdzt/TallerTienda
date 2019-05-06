@@ -1,11 +1,11 @@
 [
     {
         "id": 1,
-        "imagen": "1-earphones.png",
+        "imagen": ["1-earphones.png","1-earphones-1.png","1-earphones-2.png","1-earphones-3.png","1-earphones-4.png","1-earphones-5.png","1-earphones-6.png"], 
         "tipo": "earphone",
         "nombre": "urBeats3",
         "precio": "$59.95",
-        "color": "negro", /*Llamarse solo negro o rojo para despues llamar la imagen*/ 
+        "color": "negro",
         "descripcion": "Diseñados para su vida, los auriculares urbeats3 con cable presentan un diseño acústico afinado para brindar una experiencia auditiva excepcional. Su ajuste ergonómico óptimo proporciona comodidad durante todo el día, mientras que el cable plano sin enredos y los auriculares magnéticos ofrecen una fácil portabilidad, para que pueda mantenerse en movimiento.",
         "car1": "Eleva tu música",
         "car1Des": "Los auriculares con cable urBeats3 presentan un diseño acústico afinado a través de un controlador alineado axialmente para ofrecer una experiencia auditiva excepcional.",
@@ -19,7 +19,7 @@
 
     {
         "id": 2,
-        "imagen": "2-NBA.png",
+        "imagen": ["2-NBA.png","2-NBA-1.png","2-NBA-2.png","2-NBA-3.png"],
         "tipo": "headphone",
         "nombre": "Beats Studio3 Wireless Headphones - NBA Collection - Warriors Royal",
         "precio": "$349.95",
@@ -36,7 +36,7 @@
 
     {
         "id": 3,
-        "imagen": "3-bluetooth.png",
+        "imagen":["3-bluetooth.png","3-bluetooth-1.png","3-bluetooth-2.png"], 
         "tipo": "bluetooth",
         "nombre": "BeatsX",
         "precio": "$99.95",
@@ -54,7 +54,7 @@
 
     {
         "id": 4,
-        "imagen": "4-NBA.png",
+        "imagen": ["4-NBA.png","4-NBA-1.png","4-NBA-2.png","4-NBA-3.png"],
         "tipo": "headphone",
         "nombre": "Beats Studio3 Wireless Headphones - NBA Collection - Celtics Black",
         "precio": "$349.95",
@@ -71,7 +71,7 @@
 
     {
         "id": 5,
-        "imagen": "5-headphones.png",
+        "imagen": ["5-headphones.png","5-headphones-azul.png","5-headphones-rojo.png"],
         "tipo": "headphone",
         "nombre": "Beats EP",
         "precio": "$129.95",
@@ -142,7 +142,7 @@
 
     {
         "id": 9,
-        "imagen": "9-NBA.png",
+        "imagen": ["9-NBA.png","9-NBA-1.png","9-NBA-2.png","9-NBA-3.png"],
         "tipo": "headphone",
         "nombre": "Beats Studio3 Wireless Headphones - NBA Collection - Lakers Purple",
         "precio": "$349.95",
@@ -211,7 +211,7 @@
 
     {
         "id": 13,
-        "imagen": "13-NBA.png",
+        "imagen": ["13-NBA.png","13-NBA-1.png","13-NBA-2.png","13-NBA-3.png"],
         "tipo": "headphone",
         "nombre": "Beats Studio3 Wireless Headphones - NBA Collection - Rockets Red",
         "precio": "$349.95",
@@ -246,7 +246,7 @@
 
     {
         "id": 15,
-        "imagen": "15-NBA.png",
+        "imagen": ["15-NBA.png","15-NBA-1.png","15-NBA-2.png","15-NBA-3.png"],
         "tipo": "headphone",
         "nombre": "Beats Studio3 Wireless Headphones - NBA Collection - 76ers Blue",
         "precio": "$349.95",
@@ -280,7 +280,7 @@
 
     {
         "id": 17,
-        "imagen": "17-NBA.png",
+        "imagen":  ["17-NBA.png","17-NBA-1.png","17-NBA-2.png","17-NBA-3.png"],
         "tipo": "headphone",
         "nombre": "Beats Studio3 Wireless Headphones - NBA Collection - Raptors White",
         "precio": "$349.95",
