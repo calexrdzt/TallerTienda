@@ -197,4 +197,14 @@ function cargarPagina() {
 window.addEventListener('load', cargarPagina);
 
 
+app.get('/tienda/', function(req,res){
+  
+    var productos = clientdb.collection('productos');
+    productos.find().toArray(function(err,docs){
+      var contexto ={
+        listaProductos: docs,
+      };
 
+      res.render('render',contexto);
+    });
+});
