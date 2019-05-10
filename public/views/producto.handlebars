@@ -10,14 +10,15 @@
 
 </head>
 <body>
+
+    {{#each listaProductos}}
     <article class="producto">
         <div class="producto__info">
-            <h1 class="producto__titulo">Beats Studio 3 Wireless</h1>
+            <h1 class="producto__titulo">{{nombre}}</h1>
             <ul>
-                <li class="producto__car">Cancelación de ruido adaptativa pura (ANC puro)</li>
-                <li class="producto__car">Hasta 40 horas de tiempo de escucha</li>
-                <li class="producto__car">Con Fast Fuel, una carga de 10 minutos = 3 horas de tiempo de escucha</li>
-                <li class="producto__car">Chip W1 de Apple y Bluetooth® inalámbrico de clase 1</li>
+                <li class="producto__car">{{car1Des}}</li>
+                <li class="producto__car">{{car2Des}}</li>
+                <li class="producto__car">{{car3Des}}</li>
 
             </ul>
 
@@ -39,6 +40,16 @@
         </div>
         
 
+    </article>
+
+    {{/each}}
+
+    <article class="masinfo">
+        <h1 class="masinfo__titulo">Contenido</h1>
+        <p class="masinfo__con">{{Contenido[0]}}</p>
+        <p class="masinfo__con">{{Contenido[1]}}</p>
+        <p class="masinfo__con">{{Contenido[2]}}</p>
+        <p class="masinfo__con">{{Contenido[3]}}</p>
     </article>
     
 </body>
