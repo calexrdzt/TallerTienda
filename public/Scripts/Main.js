@@ -111,11 +111,12 @@ function cargarPagina() {
 
 
   var btns = document.querySelectorAll('.btnimg');
-var imgGRande = document.querySelector('.producto__img');
+  var imgGRande = document.querySelector('.producto__img');
 
   function recorrerBotones(btn, index) {
 
     function clickBoton(event) {
+      console.log("Recorre botones");
 
       var url = imgGRande.style.backgroundImage;
       var valor = btn.value;
@@ -143,6 +144,7 @@ var imgGRande = document.querySelector('.producto__img');
   }
 
   flecha.addEventListener('click',mostrarFiltros)
+
 
 
 }

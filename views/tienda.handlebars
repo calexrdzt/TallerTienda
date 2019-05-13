@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/Style/tienda.css">
-    <script src="/index.js"></script>
-    <script src="/Scripts/Main.js"></script>
 
+    <link rel="stylesheet" href="/Style/tienda.css">
+    <link rel="stylesheet" href="/Style/main.css">
+    <script src="/index.js"></script>
+   
 
     <link href="https://fonts.googleapis.com/css?family=Khula:800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:900" rel="stylesheet">
@@ -21,6 +22,10 @@
 <body>
     <article class="encabezado">
         <div class="encabezado__logo"></div>
+        <div class="car">
+             <div class="encabezado__carrito"></div>
+        </div>
+       
         <h1 class="encabezado__titulo">Hear it First</h1>
         <p class="encabezado__filtrar">Filtrar por: </p>
         <div class="flecha"></div>
@@ -87,5 +92,68 @@
         {{/each}}
 
     </article>
+
+    <div class="septimo">
+        <div class="septimo__info">
+            <h1 class="septimo__titulo">Hear it first</h1>
+        </div>
+        <div class="septimo__regis">
+            <p class="septimo__texto">Recibe actualizaciones sobre caídas de productos, colaboraciones y todas las cosas Beats.</p>
+
+            <input class="septimo__input" type="text" placeholder="ingresa tu correo electrónico">
+
+            <button class="septimo__boton">Resgistrarse</button>
+
+        </div>
+
+
+
+    </div>
 </body>
+
+
+
+<footer class="footer">
+
+        <div class="footer__izq">
+            <div class="footer__info">
+                <p class="footer__izq-text">Terminos y condiciones</p>
+                <p class="footer__izq-text">Politicas de privacidad</p>
+                <p class="footer__izq-text">Beatsaudio</p>
+            </div>
+        </div>
+        <div class="footer__cen">
+            <h1 class="footer__cen-titulo">Beats</h1>
+            <h2 class="footer__cen-subtitulo"><span class="footer__cen-span">By</span> Dr. Dree</h2>
+            <div class="footer__redes">
+                <a href="https://es-la.facebook.com/beatsbydre/" target="blank">
+                    <div class="primero__red-icon" style="background-image:url(/Imagenes/facebook-r.png)"></div>
+                </a>
+                <a href="https://www.youtube.com/channel/UCSszI_zUkVVA24WVuTYpHTQ" target="blank">
+                    <div class="primero__red-icon" style="background-image:url(/Imagenes/youtube-r.png)"></div>
+                </a>
+                <a href="https://www.instagram.com/beatsbydre/?hl=es-la" target="blank">
+                    <div class="primero__red-icon" style="background-image:url(/Imagenes/instagram-r.png)"></div>
+                </a>
+                <a href="https://www.reddit.com/r/beatsbydre/" target="blank">
+                    <div class="primero__red-icon" style="background-image:url(/Imagenes/reddit-r.png)"></div>
+                </a>
+            </div>
+
+            <div class="footer__redes-line"></div>
+            <div class="footer__logo" style="background-image:url(/Imagenes/b_roja.png)"></div>
+
+            <p class="footer__cent-copy">Copyright © 2019 Apple Inc. Todos los derechos reservados.</p>
+        </div>
+        <div class="footer__der">
+            <div class="footer__info">
+                <p class="footer__der-text">Soporte</p>
+                <p class="footer__der-text">Productos</p>
+                <p class="footer__der-text">Contacto</p>
+            </div>
+        </div>
+    </footer>
+
+ <script src="/Scripts/Main.js"></script>
+
 </html>
