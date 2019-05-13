@@ -61,6 +61,7 @@ app.get('/tienda/:tipo?', function(req, res) {
 });
 
 
+
 //6. Ruta dinamica del producto
 app.get('/tienda/Productos/:producto',function(req,res){
 
@@ -75,7 +76,7 @@ app.get('/tienda/Productos/:producto',function(req,res){
         docs.forEach(function(prod){
 
                 contexto=prod;
-                console.log(contexto.nombre+ " holi babys");
+                console.log(contexto.nombre+ "holi babys");
 
         });
  
@@ -87,6 +88,36 @@ app.get('/tienda/Productos/:producto',function(req,res){
 
     });
 });
+
+/*
+app.get('/tienda/:filtro', function(req, res) {
+
+    var productos = clientdb.collection('Productos');
+    productos.find({ $or: [ { cone: req.params.filtro }, { tipo: req.params.filtro }]})
+	        .toArray(function(err, docs) {
+        var contexto = {
+            listaProductos: docs,
+           
+        };
+        res.render('tienda',contexto);
+    });
+
+    
+   
+});
+
+*/
+
+
+//Ruta al carrito
+app.get('/resumen', function(req, res) {
+    var contexto = {
+       
+    };
+    res.render('resumen',contexto);
+});
+
+
 
 
 //3. Decirle por que puerto ecuchar  

@@ -1,3 +1,5 @@
+
+$principal: rgb(165, 2, 1);
 .btnimg-1{
 
     width: 12px;
@@ -136,4 +138,26 @@ body{
         top: 0;
     }
 
+}
+
+
+
+.masinfo{
+    padding: 20px 70px ;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 50px;
+    width: 85%;
+    height: 90%;
+    background-color: white;
+
+    &_titulo{
+        color: $principal;
+        font-family: 'Gilroy';
+    }
+
+    &__con{
+        font-size: 1em;
+    }
 }

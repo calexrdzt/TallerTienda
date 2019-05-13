@@ -12,7 +12,7 @@ function cargarPagina() {
       opciones.style.widht = '100%';
       barra.style.display = 'block';
       barra.style.height = 'auto';
-      opciones.style.transition = '0..5s';
+      opciones.style.transition = '0.5s';
       barra.style.transition = 'display 0.5s';
       console.log("opciones");
       activo = true;
@@ -135,10 +135,14 @@ var imgGRande = document.querySelector('.producto__img');
 
 
   
+  var flecha = document.querySelector('.flecha');
+  var filtros = document.querySelector('.encabezado__filtro');
 
+  function mostrarFiltros(){
+    filtros.style.display = 'none';
+  }
 
-
-
+  flecha.addEventListener('click',mostrarFiltros)
 
 
 }
