@@ -26,6 +26,7 @@ function cargarPagina() {
     }
 
   }
+    
 
   hamburguesa.addEventListener('click', menuHamburguesa);
 
@@ -108,43 +109,6 @@ function cargarPagina() {
 
   ScrollReveal().reveal('.quinto__color', slideDown);
   ScrollReveal().reveal('.quinto__titulo', slideDown);
-
-
-  var btns = document.querySelectorAll('.btnimg');
-  var imgGRande = document.querySelector('.producto__img');
-
-  function recorrerBotones(btn, index) {
-
-    function clickBoton(event) {
-      console.log("Recorre botones");
-
-      var url = imgGRande.style.backgroundImage;
-      var valor = btn.value;
-      var urlD = url.split('/');
-      var urlPunto = urlD[urlD.length - 1].split('.');
-
-      imgGRande.style.backgroundImage = "url(/public/Imagenes/ImagenesTienda/" + urlPunto[urlPunto.length - 2] + '-' + valor+'.png)';
-      imgGRande.style.transition = "0.5s";
-      console.log("clickSobreElBoton", urlD[urlD.length - 1], "------------", urlPunto[urlPunto.length - 2]);
-    }
-
-
-    btn.addEventListener('click', clickBoton);
-  }
-
-  btns.forEach(recorrerBotones);
-
-
-  
-  var flecha = document.querySelector('.flecha');
-  var filtros = document.querySelector('.encabezado__filtro');
-
-  function mostrarFiltros(){
-    filtros.style.display = 'none';
-  }
-
-  flecha.addEventListener('click',mostrarFiltros)
-
 
 
 }

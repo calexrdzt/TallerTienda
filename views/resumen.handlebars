@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/Style/tienda.css">
+    <link rel="stylesheet" href="/Style/resumen.css">
     <link rel="stylesheet" href="/Style/main.css">
 
 
@@ -38,26 +38,26 @@
             <h2 class="dir__resumen-titulo">Resumen de tu pedido</h2>
 
             <div class="dir__resumen-fila">
-                <p class="dir__texto">Productos</p>
+                <p class="dir__texto-res">Productos</p>
                 <p class="dir__texto-der">10</p>
             </div>
 
             <div class="dir__resumen-fila">
-                <p class="dir__texto">Subtotal</p>
+                <p class="dir__texto-res">Subtotal</p>
                 <p class="dir__texto-der">$650.25</p>
             </div>
 
             <div class="dir__resumen-fila">
-                <p class="dir__texto">Envío</p>
+                <p class="dir__texto-res">Envío</p>
                 <p class="dir__texto-der">$0</p>
             </div>
 
             <div class="dir__resumen-fila">
-                <p class="dir__texto">Total</p>
+                <p class="dir__texto-res">Total</p>
                 <p class="dir__texto-der">$650.25</p>
             </div>
             
-            <button class="producto__agregar">Procesar compra</button>
+            <button class="agregar">Procesar compra</button>
         </div>
         
 
@@ -68,6 +68,12 @@
 
             <h1 class="met__titulo">Método de pago</h1>
              <p class="dir__texto">Tarjeta de crédito</p>
+             <div class="met__logos">
+                 <div class="logo"  style="background-image:url(/Imagenes/ImagenesTienda/headphone.png)"></div>
+                 <div class="logo"></div>
+                 <div class="logo"></div>
+                 <div class="logo"></div>
+             </div>
              <p class="dir__texto">Nombre del titular</p>
 
              <input class="dir__input" type="text" placeholder="Nombre del titular de la tarjeta">
@@ -98,6 +104,35 @@
         </div>
         
     </article>
+
+
+
+    <article class="prods">
+        <div class="prods__titulos">
+            <h1 class="prods__titulo">Tus productos</h1>
+            <div class="prods__logo"></div>
+        </div>
+
+        <div class="prods__informacion">
+            <div class="prods__producto">
+                <div class="prods__producto-img"style="background-image:url(/Imagenes/ImagenesTienda/1-earphones-4.png)" onclick="location.href='/tienda/bluetooth';">
+                </div>
+                
+                <div class="prods__producto-info">
+                    <h1 class="prods__nombre">Nombre</h1>
+                    <p class="prods__texto">TExto del producto</p>
+                </div>
+
+                <div class="prods__producto-precio">
+                    <p class="prods__texto">$599.62</p>
+                    <button class="eliminar">Eliminar</button>
+                </div>
+            </div>
+        </div>
+        <button class="finalizar">Finalizar compra</button>
+    </article>
+
+    
     
 </body>
 
