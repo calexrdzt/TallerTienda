@@ -1,0 +1,139 @@
+.btnimg-1{
+
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: rgb(202, 202, 202);
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+   
+}
+
+.btnimg:hover{
+    background-color: rgb(173, 173, 173);
+}
+
+.btnimg:focus{
+    background-color: $principal;
+}
+
+
+
+body{
+    background-color: rgb(236, 236, 236);
+}
+
+.producto{
+    padding: 20px 70px ;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 50px;
+    width: 85%;
+    height: 90%;
+    background-color: white;
+    display: flex;
+    align-content: center;
+
+    &__info{
+        flex-basis: 50%;
+        height: auto;   
+    }
+
+    &__titulo{
+        font-size: 2em;
+        color: $principal;
+        align-content: center;
+        font-family: 'Gilroy';
+    }
+
+    &__car{
+        color: black;
+        font-family: 'Raleway', sans-serif;
+        justify-content: space-between;
+        font-size: 1em;
+        margin-top: 10px;
+
+    }
+
+    &__colores{
+        margin-top: 50px;
+        color: black;
+        font-family: 'Raleway', sans-serif;
+        justify-content: space-between;
+        font-size: 1em;
+    }
+    &__col{
+        width: 45px;
+        height: 45px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__precio{
+        color: black;
+        font-family: 'Raleway', sans-serif;
+        justify-content: space-between;
+        font-size: 1.5em;
+    }
+
+    &__imgtodas{
+        flex-basis: 50%;
+        height: 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    &__img{
+        height: 50%;
+        margin: auto;
+        background-image: url(/Imagenes/ImagenesTienda/5-headphones-rojo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        
+    }
+
+    &__agregar{
+        margin-left: 30px;
+        color: $principal;
+        position: relative;
+        font-family: 'Raleway', sans-serif;
+        background-color: transparent;
+        border: 1px solid $principal; 
+        border-radius: 40px;
+        height: 40px;
+        width: 160px;
+        transition: 0.2s ease-in;
+        outline: 0;
+        overflow:hidden;
+        background: none;
+        z-index: 1;
+        cursor: pointer;
+    }
+    
+    &__agregar:hover{
+        color: white;
+        background-color: transparent;
+        border: 1px solid $principal;
+    }
+      
+    &__agregar:before {
+        content: "";
+        position: absolute;
+        background: $principal;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: -1;
+        -webkit-transition: top 0.09s ease-in;
+    }
+      
+    &__agregar:hover:before {
+        top: 0;
+    }
+
+}

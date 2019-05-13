@@ -23,7 +23,7 @@ app.set('view engine','handlebars');
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 const url = 'mongodb://localhost:27017';
-const dbName = 'tienda';
+const dbName = 'Tienda';
 const client = new MongoClient(url, { useNewUrlParser: true });
 var clientdb=null;
 
@@ -40,70 +40,54 @@ app.get('/',function(req,res){
 res.sendFile(__dirname+'/public/Taller1RodriguezChristian.html');
 });
 
-
-//4. Ruta de la tienda
-app.get('/tienda', function(req, res) {
-    path.join(__dirname, '/views');
-    //8. buscar documentos mongo
-    var productos = clientdb.collection('Productos');
-    productos.find()
-             .toArray(function(err, docs) {
-        var contexto = {
-            listaProductos: docs,
-        };
-
-        res.render('tienda',contexto);
-
-        console.log('Encontramos los documentos');
-    console.log(docs.length);
-    });
- 
- });
-
  //Ruta filtros
-app.get('/tienda/:categoria', function(req, res) {
+app.get('/tienda/:tipo?', function(req, res) {
 
+    var query = {};
+
+    if(req.params.tipo){
+        query.tipo = req.params.tipo;
+    }
+    
     var productos = clientdb.collection('Productos');
-    productos.find({ categoria: req.params.categoria })
+    productos.find(query)
              .toArray(function(err, docs) {
         var contexto = {
             listaProductos: docs,
-          
         };
         res.render('tienda',contexto);
+        console.log(docs.length);
     });
 });
 
 
 //6. Ruta dinamica del producto
-app.get('/tienda/productos/:detalles',function(req,res){
+app.get('/tienda/Productos/:producto',function(req,res){
 
-  
     var contexto=null;
-    
+    console.log('Se encontro producto');
 
     var productos = clientdb.collection('Productos');
-    productos.find({}).toArray(function(err,docs){
+
+    productos.find({id : req.params.producto}).toArray(function(err,docs){
         assert.equal(null,err);
-     
+             
         docs.forEach(function(prod){
-            if(prod.ref == req.params.detalles){
+
                 contexto=prod;
-            }
+                console.log(contexto.nombre+ " holi babys");
+
         });
  
-
     if(contexto == null){
         res.send('Page not found');
     }else{
-        res.render('detalles',contexto);
+        res.render('producto', contexto);
     }
 
-   
-
+    });
 });
 
-});
 
 //3. Decirle por que puerto ecuchar  
 app.listen(3000, function(){

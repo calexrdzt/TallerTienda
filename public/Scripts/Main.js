@@ -69,10 +69,11 @@ function cargarPagina() {
       var urlD = url.split('/');
       var urlPunto = urlD[urlD.length - 1].split('.');
 
-      beatColor.style.backgroundImage = "url(/Imagenes/" + urlPunto[urlPunto.length - 2] + 'b' + '.png)';
+      beatColor.style.backgroundImage = "url(/public/Imagenes/" + urlPunto[urlPunto.length - 2] + 'b' + '.png)';
       beatColor.style.transition = "0.5s";
       console.log("clickSobreElColor", urlD[urlD.length - 1], "------------", urlPunto[urlPunto.length - 2]);
     }
+    
 
 
     col.addEventListener('click', clickColor);
@@ -109,20 +110,40 @@ function cargarPagina() {
   ScrollReveal().reveal('.quinto__titulo', slideDown);
 
 
+  var btns = document.querySelectorAll('.btnimg');
+var imgGRande = document.querySelector('.producto__img');
+
+  function recorrerBotones(btn, index) {
+
+    function clickBoton(event) {
+
+      var url = imgGRande.style.backgroundImage;
+      var valor = btn.value;
+      var urlD = url.split('/');
+      var urlPunto = urlD[urlD.length - 1].split('.');
+
+      imgGRande.style.backgroundImage = "url(/public/Imagenes/ImagenesTienda/" + urlPunto[urlPunto.length - 2] + '-' + valor+'.png)';
+      imgGRande.style.transition = "0.5s";
+      console.log("clickSobreElBoton", urlD[urlD.length - 1], "------------", urlPunto[urlPunto.length - 2]);
+    }
+
+
+    btn.addEventListener('click', clickBoton);
+  }
+
+  btns.forEach(recorrerBotones);
+
+
+  
+
+
+
+
+
 
 }
 
 window.addEventListener('load', cargarPagina);
 
 
-app.get('/tienda/', function(req,res){
-  
-    var productos = clientdb.collection('productos');
-    productos.find().toArray(function(err,docs){
-      var contexto ={
-        listaProductos: docs,
-      };
 
-      res.render('render',contexto);
-    });
-});

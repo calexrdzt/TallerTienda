@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/public/Style/tienda.css">
+    <link rel="stylesheet" href="/Style/tienda.css">
     <script src="/index.js"></script>
+    <script src="/public/Scripts/Main.js"></script>
 
 
     <link href="https://fonts.googleapis.com/css?family=Khula:800" rel="stylesheet">
@@ -31,9 +32,9 @@
                 <p class="encabezado__filtro-titulo">Forma</p>
                 
                 <div class="encabezado__filtro-imgs">
-                    <div class="encabezado__img" style="background-image:url(/public/Imagenes/ImagenesTienda/headphone.png)"></div>
-                    <div class="encabezado__img" style="background-image:url(/public/Imagenes/ImagenesTienda/earphone.png)"></div>
-                    <div class="encabezado__img" style="background-image:url(/public/Imagenes/ImagenesTienda/speaker.png)"></div>
+                    <div class="encabezado__img" style="background-image:url(/Imagenes/ImagenesTienda/headphone.png)"></div>
+                    <div class="encabezado__img" style="background-image:url(/Imagenes/ImagenesTienda/earphone.png)"></div>
+                    <div class="encabezado__img" style="background-image:url(/Imagenes/ImagenesTienda/speaker.png)"></div>
                 </div>
                 
                 
@@ -44,8 +45,8 @@
                 <p class="encabezado__filtro-titulo">Conexión</p>
 
                 <div class="encabezado__filtro-imgs">
-                    <div class="encabezado__img" style="background-image:url(/public/Imagenes/ImagenesTienda/bluetooth.png)"></div>
-                    <div class="encabezado__img" style="background-image:url(/public/Imagenes/ImagenesTienda/wire.png)"></div>
+                    <div class="encabezado__img" style="background-image:url(/Imagenes/ImagenesTienda/bluetooth.png)"></div>
+                    <div class="encabezado__img" style="background-image:url(/Imagenes/ImagenesTienda/wire.png)"></div>
                 </div>
                
             </div>
@@ -55,8 +56,8 @@
              <p class="encabezado__filtro-titulo">Edición Especial</p>
 
                 <div class="encabezado__filtro-imgs">
-                    <div class="encabezado__img" style="background-image:url(/public/Imagenes/ImagenesTienda/nba.png)"></div>
-                    <div class="encabezado__img" style="background-image:url(/public/Imagenes/ImagenesTienda/disney.png)"></div>
+                    <div class="encabezado__img" style="background-image:url(/Imagenes/ImagenesTienda/nba.png)"></div>
+                    <div class="encabezado__img" style="background-image:url(/Imagenes/ImagenesTienda/disney.png)"></div>
                 </div>
 
             </div>
@@ -72,7 +73,7 @@
         {{#each listaProductos}}
 
         <div class="tienda__producto">
-            <div class="producto-img" style="background-image:url(/public/Imagenes/ImagenesTienda/{{this.imagenes.[0]}}"></div>
+            <div class="producto-img" style="background-image:url(/Imagenes/ImagenesTienda/{{imagen.[0]}}"></div>
             <h2 class="producto-titulo">{{nombre}}</h2>
             <div class="producto-info">
                 <p class="producto-des">{{descripcion}}</p>
