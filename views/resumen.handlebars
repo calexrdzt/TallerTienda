@@ -14,6 +14,7 @@
 </head>
 <body>
 
+    <form action="/checkout" method="POST">
     <article class="dir">
 
         <div class="dir__inputs">
@@ -21,16 +22,16 @@
             <h1 class="dir__titulo">Dirección de envio</h1>
 
             <p class="dir__texto">Nombre</p>
-            <input class="dir__input" type="text" placeholder="Nombre">
+            <input name="nombre" class="dir__input" type="text" placeholder="Nombre" value="calex">
 
             <p class="dir__texto">Apellido</p>
-            <input class="dir__input" type="text" placeholder="Apellido">
+            <input name="apellido" class="dir__input" type="text" placeholder="Apellido" value="calex">
 
             <p class="dir__texto">Dirección</p>
-            <input class="dir__input" type="text" placeholder="Dirección">
+            <input name="direccion" class="dir__input" type="text" placeholder="Dirección" value="calex">
 
             <p class="dir__texto">Correo</p>
-            <input class="dir__input" type="text" placeholder="corre@beats.co">
+            <input name="correo" class="dir__input" type="email" placeholder="corre@beats.co" value="calex@beats.co" >
         </div>
 
 
@@ -76,17 +77,17 @@
              </div>
              <p class="dir__texto">Nombre del titular</p>
 
-             <input class="dir__input" type="text" placeholder="Nombre del titular de la tarjeta">
+             <input name="nombreT" class="dir__input" type="text" placeholder="Nombre del titular de la tarjeta" value="calex">
 
              <div class="met__fecha">
                  <div class="met__mes">
                       <p class="dir__texto">Mes de expedición</p>
-                      <input class="dir__inputCod" type="text" placeholder="Mayo">
+                      <input name="mes" class="dir__inputCod" type="text" placeholder="Mayo" value="Mayo">
                  </div>
                      
                  <div class="met__an">
                      <p class="dir__texto">Año de expedición</p>
-                     <input class="dir__inputCod" type="text" placeholder="2019">
+                     <input name="an" class="dir__inputCod" type="text" placeholder="2019" value="2019">
              </div>
 
              </div>
@@ -96,10 +97,10 @@
         <div class="met__num">
 
             <p class="dir__texto">Número de tarjeta</p>
-            <input class="dir__input" type="text" placeholder="123456789">
+            <input name="numero" class="dir__input" type="text" placeholder="123456789" value="123456789">
 
             <p class="dir__texto">Código de seguridad</p>
-            <input type="password" class="dir__inputCod" type="text" placeholder="****">
+            <input name="contra" type="password" class="dir__inputCod" type="text" placeholder="****" value="123456789">
 
         </div>
         
@@ -129,11 +130,13 @@
                 </div>
             </div>
         </div>
+
+         <input class="input-productos" type="hidden" name="productos" value="">
         <button class="finalizar">Finalizar compra</button>
     </article>
 
     
-    
+   </form>
 </body>
 
     <footer class="footer">
@@ -176,5 +179,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="/Scripts/resumen.js"></script>
 
 </html>

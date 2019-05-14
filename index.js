@@ -109,7 +109,7 @@ app.get('/tienda/:filtro', function(req, res) {
 */
 
 
-//Ruta al carrito
+//Ruta al resumen
 app.get('/resumen', function(req, res) {
     var contexto = {
        
@@ -117,6 +117,39 @@ app.get('/resumen', function(req, res) {
     res.render('resumen',contexto);
 });
 
+//Ruta al checkout
+app.get('/checkout', function(req, res) {
+    var contexto = {
+       
+    };
+    res.render('checkout',contexto);
+});
+
+
+//Ruta al checkout
+app.post('/checkout', function(req, res) {
+    
+    var pedido = {
+       nombre:req.body.nombre,
+       nombreT:req.body.nombreT,
+       apellido:req.body.apellido,
+       direccion:req.body.direccion,
+       cooreo:req.body.correo,
+       mes:req.body.mes,
+       an:req.body.an,
+       numero:req.body.numero,
+       contra:req.body.contra,
+       productos:JSON.parse(req.body.productos)
+    };
+
+    var collection=clientdb.collection('pedidos');
+    collection.insertOne(pedido,function(err){
+        assert.equal(err,null);
+        console.log("Pedido Guardado");
+
+    });
+    res.redirect('/tienda');
+});
 
 
 
