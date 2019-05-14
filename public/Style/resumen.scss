@@ -143,9 +143,33 @@ label{
         display: flex;
     }
 
+    &__logos{
+        display: flex;
+    }
+
+
+}
 
 
 
+.logo{
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    border: 1px solid rgb(216, 216, 216);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.logo:hover{
+    border: 1px solid gray;
+}
+
+.logo:focus{
+    border: 1px solid gray;
 }
 
 
@@ -258,7 +282,9 @@ label{
         font-family: 'Raleway', sans-serif;
     }
 
+    
 }
+
 
 label{
         font-family: 'Raleway', sans-serif;
@@ -311,4 +337,69 @@ label{
   
 .finalizar:hover:before {
     top: 0;
+}
+
+
+@media (max-width: 500px) {
+    .dir{
+        display: block;
+        padding: 20px 20px ;
+        margin-top: 0;
+        border-radius: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        height: auto;
+
+
+        &__resumen{
+            display: none;
+        }
+    }
+
+    .met{
+        display: block;
+        padding: 20px 20px ;
+        margin-top: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .prods{
+        display: block;
+        padding: 20px 20px ;
+        margin-top: 0;
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+
+        &__titulos{
+            display: none;
+        }
+
+        &__informacion{
+            display: none;
+        }
+
+        &__producto-img{
+            display: none;
+        }
+
+        &__producto-info{
+            display: none;
+        }
+
+        &__producto-precio{
+            display: none;
+        }
+
+
+    }
+
+    .finalizar{
+        margin: 0;
+    }
+   
 }

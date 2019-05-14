@@ -71,7 +71,7 @@ body{
         font-size: 1em;
     }
     &__col{
-        width: 45px;
+        width: auto;
         height: 45px;
         background-size: contain;
         background-repeat: no-repeat;
@@ -95,6 +95,17 @@ body{
     &__imagen{
         height: 90%;
         margin: auto;
+        background-image: url(/Imagenes/ImagenesTienda/5-headphones-rojo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        
+    }
+
+    &__imagen-res{
+        height: 50%;
+        margin: auto;
+        display: none;
         background-image: url(/Imagenes/ImagenesTienda/5-headphones-rojo.png);
         background-size: contain;
         background-repeat: no-repeat;
@@ -186,5 +197,80 @@ body{
 
     &__con{
         font-size: 1.4em;
+        font-family: 'Raleway', sans-serif;
     }
+}
+
+@media (max-width: 500px) {
+    .producto{
+        display: block;
+        padding: 20px 20px ;
+        margin-top: 0;
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+
+        &__imagen-res{
+            display: block;
+            height: 250px;
+        }
+
+        &__titulo{
+            margin: 10px;
+            text-align: center;
+        }
+
+        &__colores{
+            text-align: center;
+            color: $principal;
+        }
+
+        &__botones{
+            display: none;
+        }
+        &__col{
+            text-align: center;
+        }
+
+        &__precio{
+            text-align: center;
+        }
+
+        &__agregar{
+            align-self: center;
+            text-align: center;
+            margin: auto;
+            padding: 0;
+        }
+
+    }
+
+
+    .masinfo{
+        padding: 20px;
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+
+
+
+        &__imagen{
+            height: 280px;
+            margin: auto;
+        
+        }
+    
+        &__titulo{
+            text-align: center;
+        }
+    
+        &__con{
+            font-size: 1em;
+        }
+    }
+
 }

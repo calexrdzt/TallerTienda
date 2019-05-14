@@ -44,11 +44,9 @@ res.sendFile(__dirname+'/public/Taller1RodriguezChristian.html');
 app.get('/tienda/:tipo?', function(req, res) {
 
     var query = {};
-
     if(req.params.tipo){
         query.tipo = req.params.tipo;
     }
-    
     var productos = clientdb.collection('Productos');
     productos.find(query)
              .toArray(function(err, docs) {
@@ -127,7 +125,7 @@ app.get('/checkout', function(req, res) {
 
 
 //Ruta al checkout
-app.post('/checkout', function(req, res) {
+app.post('/resumen', function(req, res) {
     
     var pedido = {
        nombre:req.body.nombre,
