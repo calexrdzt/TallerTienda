@@ -13,7 +13,10 @@
 </head>
 <body>
 
+    
+
     <article class="producto">
+        <div class="back" style="background-image:url(/Imagenes/ImagenesTienda/back.png)" onclick="location.href='/tienda';"></div>
         <div class="producto__imagen-res" style="background-image:url(/Imagenes/ImagenesTienda/{{imagen.[0]}}"></div>
         <div class="producto__info">
             <h1 class="producto__titulo">{{nombre}}</h1>
@@ -27,7 +30,7 @@
             <h3 class="producto__colores">Colores disponibles</h3>
             <div class="producto__col" style="background-image:url(/Imagenes/b_roja.png)"></div>
 
-            <p class="producto__precio">${{precio}}</p>
+            <p class="producto__precio">$  <span class="precioReal">{{precio}}</span></p>
 
             <button class="producto__agregar">Agregar al carrito</button>
         </div>
@@ -102,4 +105,5 @@
 
 
     <script src="/Scripts/prod.js"></script>
+    <script src="/Scripts/carrito.js"></script>
 </html>
