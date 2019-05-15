@@ -8,6 +8,7 @@ var app = express();
 
 //1. Establecer la carpeta public como estatica
 app.use(express.static('public'));
+app.use(express.urlencoded({extended:true}));
 
 //1. Registro de handlebars
 app.engine('handlebars',exphbs());
@@ -123,7 +124,7 @@ app.get('/checkout', function(req, res) {
 
 
 //Ruta al checkout
-app.post('/resumen', function(req, res) {
+app.post('/acabamos', function(req, res) {
     
     var pedido = {
        nombre:req.body.nombre,
@@ -135,7 +136,7 @@ app.post('/resumen', function(req, res) {
        an:req.body.an,
        numero:req.body.numero,
        contra:req.body.contra,
-       productos:JSON.parse(req.body.productos)
+      // productos:JSON.parse(req.body.productos)
     };
 
     var collection=clientdb.collection('pedidos');

@@ -15,11 +15,13 @@ function agregarProducto() {
     var nombreProducto = document.querySelector('.producto__titulo').innerHTML;
     var imagenProducto = document.querySelector('.producto__imagen-res').style.backgroundImage;
     var precioProducto = document.querySelector('.precioReal').innerHTML;
+    var desProducto = document.querySelector('.producto-des').innerHTML;
 
     var producto = {
         nombre: nombreProducto,
         imagen: imagenProducto,
-        precio: precioProducto
+        precio: precioProducto,
+        des: desProducto,
     }
 
     productos.push(producto);
@@ -38,12 +40,11 @@ function actualizarCarrito() {
 
         productos.forEach(prod => {
         contendorResumen.innerHTML += ` <div class="prods__producto">
-        <div class="prods__producto-img"style="background-image:`+ prod.imagen + `">
+        <div class="prods__producto-img"style="background-image:url(/Imagenes/ImagenesTienda/2-NBA.png)">
         </div>
         
         <div class="prods__producto-info">
             <h1 class="prods__nombre">`+ prod.nombre + `</h1>
-            <p class="prods__texto">TExto del producto</p>
         </div>
 
         <div class="prods__producto-precio">
@@ -69,7 +70,6 @@ eliminar.addEventListener('click', function () {
     prod.remove();
     localStorage.setItem('productos', JSON.stringify(productos));
   //  num_compra.innerHTML = productos.length;
-    actualizarCarrito();
 });
 /*
 if (total__compra != null) {

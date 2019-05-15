@@ -20,7 +20,7 @@
             </div>
         </div>
 
-    <form action="/checkout" method="POST">
+    <form action="/acabamos" method="POST">
     <article class="dir">
 
         <div class="dir__inputs">
@@ -28,16 +28,16 @@
             <h1 class="dir__titulo">Dirección de envio</h1>
 
             <p class="dir__texto">Nombre</p>
-            <input name="nombre" class="dir__input" type="text" placeholder="Nombre" value="calex">
+            <input name="nombre" class="dir__input" type="text" placeholder="Nombre">
 
             <p class="dir__texto">Apellido</p>
-            <input name="apellido" class="dir__input" type="text" placeholder="Apellido" value="calex">
+            <input name="apellido" class="dir__input" type="text" placeholder="Apellido">
 
             <p class="dir__texto">Dirección</p>
-            <input name="direccion" class="dir__input" type="text" placeholder="Dirección" value="calex">
+            <input name="direccion" class="dir__input" type="text" placeholder="Dirección">
 
             <p class="dir__texto">Correo</p>
-            <input name="correo" class="dir__input" type="email" placeholder="corre@beats.co" value="calex@beats.co" >
+            <input name="correo" class="dir__input" type="email" placeholder="corre@beats.co">
         </div>
 
 
@@ -64,7 +64,7 @@
                 <p class="dir__texto-der">$650.25</p>
             </div>
             
-            <button class="agregar">Procesar compra</button>
+            <button class="agregar" type="submit">Procesar compra</button>
         </div>
         
 
@@ -83,7 +83,7 @@
              </div>
              <p class="dir__texto">Nombre del titular</p>
 
-             <input name="nombreT" class="dir__input" type="text" placeholder="Nombre del titular de la tarjeta" value="calex">
+             <input name="nombreT" class="dir__input" type="text" placeholder="Nombre del titular de la tarjeta">
 
              <div class="met__fecha">
                  <div class="met__mes">
@@ -103,10 +103,10 @@
         <div class="met__num">
 
             <p class="dir__texto">Número de tarjeta</p>
-            <input name="numero" class="dir__input" type="text" placeholder="123456789" value="123456789">
+            <input name="numero" class="dir__input" type="text" placeholder="123456789">
 
             <p class="dir__texto">Código de seguridad</p>
-            <input name="contra" type="password" class="dir__inputCod" type="text" placeholder="****" value="123456789">
+            <input name="contra" type="password" class="dir__inputCod" type="text" placeholder="****"   >
 
         </div>
         
@@ -128,7 +128,7 @@
         </div>
 
          <input class="input-productos" type="hidden" name="productos" value="">
-        <button class="finalizar">Finalizar compra</button>
+        <button class="finalizar" type="submit">Finalizar compra</button>
     </article>
 
     

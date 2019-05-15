@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +11,23 @@
 
 
 </head>
+<div class="nav">
+    <div class="encabezado__logo" onclick="location.href='/tienda';"></div>
+    <div class="car">
+        <div class="encabezado__carrito" onclick="location.href='/resumen';"></div>
+    </div>
+</div>
+
 <body>
+
 
     <article class="pedido">
         
         <div class="pedido__info">
             <h1 class="pedido__titulo">Resumen</h1>
             <p class="pedido__texto">Calex</p>
-            <p class="pedido__texto">Dirección</p>
-            <p class="pedido__texto">Correo</p>
+            <p class="pedido__texto">Cra.64a #13b-256</p>
+            <p class="pedido__texto">christianrodriguezt@gmail.com</p>
         </div>
 
         <div class="dir__resumen">
@@ -44,10 +53,21 @@
                 <p class="dir__texto-der">$650.25</p>
             </div>
             
-            <button class="agregar">Procesar compra</button>
-        </div>
+            <button class="agregar" id="myBtn" onclick="location.href='/tienda';" >Procesar compra</button>
+
 
     </article>
-    
+
+     <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close" >&times;</span>
+                    <p>¡Compra Exitosa!</p>
+                </div>
+            </div>
+
 </body>
+    <script src="/Scripts/check.js"></script>
 </html>

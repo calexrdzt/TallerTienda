@@ -40,29 +40,33 @@
   function menuHamburguesa() {
 
     var click = false;
-
-    if (activo === false) {
-      titulo.style.paddingTop = '70px';
-      filtros.forEach(fil => {
-        fil.style.display = 'block';
-        fil.style.transitio = '0.5s';
-      });
-      
-      console.log("opciones");
-      activo = true;
-      click = true;
-
-    } else if (activo === true || click === false) {
-      filtros.forEach(fil => {
-        fil.style.display = 'none';
-      });
-      activo = false;
+    if(filtrar.style.width <'50%' ){
+      if (activo === false) {
+        titulo.style.paddingTop = '70px';
+        filtros.forEach(fil => {
+          fil.style.display = 'block';
+          fil.style.transitio = '0.5s';
+        });
+        
+        console.log("opciones");
+        activo = true;
+        click = true;
+  
+      } else if (activo === true || click === false) {
+        filtros.forEach(fil => {
+          fil.style.display = 'none';
+        });
+        activo = false;
+      }
     }
+
+    
 
   }filtrar.addEventListener('click',menuHamburguesa);
 
 
   var nav =document.querySelector('.nav');
+
   window.onscroll = function (){
     if(window.pageYOffset > 10){
       nav.style.position = 'fixed';
