@@ -87,7 +87,7 @@ app.get('/tienda/Productos/:producto',function(req,res){
     });
 });
 
-/*
+
 app.get('/tienda/:filtro', function(req, res) {
 
     var productos = clientdb.collection('Productos');
@@ -95,7 +95,6 @@ app.get('/tienda/:filtro', function(req, res) {
 	        .toArray(function(err, docs) {
         var contexto = {
             listaProductos: docs,
-           
         };
         res.render('tienda',contexto);
     });
@@ -104,7 +103,6 @@ app.get('/tienda/:filtro', function(req, res) {
    
 });
 
-*/
 
 
 //Ruta al resumen
@@ -149,7 +147,16 @@ app.post('/resumen', function(req, res) {
     res.redirect('/tienda');
 });
 
+/*
 
+const fs = require('fs');
+
+var collection = db.collection('productos');
+collection.find({})
+.toArray(function(err,docs){
+    fs.writeFileSync('db.json', JSON.stringify)
+})
+*/
 
 //3. Decirle por que puerto ecuchar  
 app.listen(3000, function(){

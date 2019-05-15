@@ -38,7 +38,7 @@ function actualizarCarrito() {
 
         productos.forEach(prod => {
         contendorResumen.innerHTML += ` <div class="prods__producto">
-        <div class="prods__producto-img"style="background-image:`+ prod.imagen + `;" onclick="location.href='/tienda/bluetooth';">
+        <div class="prods__producto-img"style="background-image:`+ prod.imagen + `">
         </div>
         
         <div class="prods__producto-info">
@@ -57,3 +57,25 @@ function actualizarCarrito() {
 
 
 actualizarCarrito();
+
+var eliminar = document.querySelector('.eliminar');
+
+if(eliminar != null){
+    
+//Eliminar elemento del carrito
+eliminar.addEventListener('click', function () {
+                
+    productos.splice(index, 1);
+    prod.remove();
+    localStorage.setItem('productos', JSON.stringify(productos));
+  //  num_compra.innerHTML = productos.length;
+    actualizarCarrito();
+});
+/*
+if (total__compra != null) {
+total__compra.innerHTML = "$" + suma;  
+subtotal.innerHTML="$"+ suma; 
+}
+*/
+actualizarCarrito();
+}
