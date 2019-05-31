@@ -8,8 +8,8 @@ new p5(function (app) {
 
     app.preload = function () {
         // initialize sound
-        sound = app.loadSound('sonido.mp3');
-        sound2 = app.loadSound('dos.mp3');
+        sound = app.loadSound('SonidoSin.mp3');
+        sound2 = app.loadSound('SonidoCon.mp3');
         sound.pan(0);
         sound2.pan(0);
 
@@ -165,6 +165,18 @@ new p5(function (app) {
         });
 
         advancedTexture.addControl(sin);
+
+
+        var texto = new BABYLON.GUI.TextBlock();
+        texto.text = "Usa tus Beats";
+        texto.color = "white";
+        texto.fontSize = 35;
+        texto.fontFamily = 'Gilroy';    
+        texto.top = -260;
+        advancedTexture.addControl(texto);
+
+
+
 
 
 
