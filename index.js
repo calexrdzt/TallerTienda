@@ -123,6 +123,13 @@ app.get('/experiencia', function(req, res) {
     res.render('experiencia',contexto);
 });
 
+//Ruta al tienda
+app.get('/tienda', function(req, res) {
+    var contexto = {
+       
+    };
+    res.render('tienda',contexto);
+});
 
 //Ruta al resumen
 app.get('/resumen', function(req, res) {
