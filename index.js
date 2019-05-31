@@ -48,8 +48,7 @@ MongoClient.connect('mongodb+srv://@cluster0-iojdx.mongodb.net/tienda',
 
 var assert = require('assert');
 const url = 'mongodb://localhost:27017';
-const dbName = 'Tienda';
-const client = new MongoClient(url, { useNewUrlParser: true });
+const dbName = 'tienda';
 var clientdb=null;
 
 //Mongo: conectar (Paso 2)
