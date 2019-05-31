@@ -62,7 +62,7 @@ app.get('/tienda/:tipo?', function(req, res) {
     if(req.params.tipo){
         query.tipo = req.params.tipo;
     }
-    var productos = clientdb.collection('Productos');
+    var productos = clientdb.collection('productos');
     productos.find(query)
              .toArray(function(err, docs) {
         var contexto = {
@@ -81,7 +81,7 @@ app.get('/tienda/Productos/:producto',function(req,res){
     var contexto=null;
     console.log('Se encontro producto');
 
-    var productos = clientdb.collection('Productos');
+    var productos = clientdb.collection('productos');
 
     productos.find({id : req.params.producto}).toArray(function(err,docs){
         assert.equal(null,err);
@@ -105,7 +105,7 @@ app.get('/tienda/Productos/:producto',function(req,res){
 
 app.get('/tienda/:filtro', function(req, res) {
 
-    var productos = clientdb.collection('Productos');
+    var productos = clientdb.collection('productos');
     productos.find({ $or: [ { cone: req.params.filtro }, { tipo: req.params.filtro }]})
 	        .toArray(function(err, docs) {
         var contexto = {
@@ -129,7 +129,7 @@ app.get('/experiencia', function(req, res) {
 
 //Ruta al tienda
 app.get('/tienda', function(req, res) {
-    var productos = db.collection('Productos');    
+    var productos = db.collection('productos');    
     var contexto = {
                listaProductos: productos,
     };
