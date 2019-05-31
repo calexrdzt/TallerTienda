@@ -83,7 +83,7 @@ app.get('/tienda/Productos/:producto',function(req,res){
     var contexto=null;
     console.log('Se encontro producto');
 
-    var productos = clientdb.collection('Productos');
+    var productos = clientdb.collection('productos');
 
     productos.find({id : req.params.producto}).toArray(function(err,docs){
         assert.equal(null,err);
