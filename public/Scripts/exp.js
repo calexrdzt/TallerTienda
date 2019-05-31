@@ -166,20 +166,6 @@ new p5(function (app) {
 
         advancedTexture.addControl(sin);
 
-
-        var texto = new BABYLON.GUI.TextBlock();
-        texto.text = "Usa tus Beats";
-        texto.color = "white";
-        texto.fontSize = 35;
-        texto.fontFamily = 'Gilroy';    
-        texto.top = -260;
-        advancedTexture.addControl(texto);
-
-
-
-
-
-
         return scene;
 
 
