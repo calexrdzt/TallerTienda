@@ -409,3 +409,66 @@ html{
         }
     }
 }
+
+.octavo{
+    background-image: url(/Imagenes/ImagenesTienda/game.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+    &__btn{
+       
+    }
+
+    &__btn:hover{
+        color: black;
+        background-color: white;
+
+    }
+}
+
+.agregar{
+    width: auto;
+    font-size: 1.2em;
+    height: 40px;
+    margin-left: 260px;
+    margin-top: 480px;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.2s ease-in;
+    outline: 0;
+    overflow:hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.agregar:hover{
+    color: $principal;
+    background-color: transparent;
+    border: 2px solid white;
+}
+  
+.agregar:before {
+    content: "";
+    position: absolute;
+    background: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.09s ease-in;
+}
+  
+.agregar:hover:before {
+    top: 0;
+}

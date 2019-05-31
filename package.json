@@ -8,9 +8,11 @@
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
     "mongodb": "^3.2.3",
-    "nodemon": "^1.18.11"
+    "scrollreveal": "^4.0.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

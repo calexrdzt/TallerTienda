@@ -79,3 +79,6 @@
       nav.style.backgroundColor = 'transparent';
     }
   }
+
+  ScrollReveal().reveal('tienda__producto', { interval: 200 });
+  ScrollReveal().reveal('encabezado__titulo');

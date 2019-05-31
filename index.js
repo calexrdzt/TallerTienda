@@ -17,6 +17,11 @@ app.engine('handlebars',exphbs());
 app.set('view engine','handlebars');
 
 
+app.engine('handlebars', exphbs({
+    defaultLayout:false,
+}));
+
+
 //7. conectar base de datos de mongo
 
 
@@ -104,6 +109,14 @@ app.get('/tienda/:filtro', function(req, res) {
    
 });
 
+
+//Ruta al experiencia
+app.get('/experiencia', function(req, res) {
+    var contexto = {
+       
+    };
+    res.render('experiencia',contexto);
+});
 
 
 //Ruta al resumen
