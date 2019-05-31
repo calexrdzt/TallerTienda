@@ -46,6 +46,20 @@ MongoClient.connect('mongodb+srv://@cluster0-iojdx.mongodb.net/tienda',
 });
 
 
+var assert = require('assert');
+const url = 'mongodb://localhost:27017';
+const dbName = 'Tienda';
+const client = new MongoClient(url, { useNewUrlParser: true });
+var clientdb=null;
+
+//Mongo: conectar (Paso 2)
+client.connect(function(err) {
+   assert.equal(null, err);
+   console.log("Conectado a la base de datos");
+   clientdb = client.db(dbName);
+  // client.close();
+ });
+
 // 2. Crear la ruta inicial (Home, Taller 1)
 app.get('/',function(req,res){
 res.sendFile(__dirname+'/public/Taller1RodriguezChristian.html');
@@ -58,7 +72,6 @@ app.get('/tienda/:tipo?', function(req, res) {
     if(req.params.tipo){
         query.tipo = req.params.tipo;
     }
-
     var productos = clientdb.collection('Productos');
     productos.find(query)
              .toArray(function(err, docs) {
@@ -126,12 +139,13 @@ app.get('/experiencia', function(req, res) {
 
 //Ruta al tienda
 app.get('/tienda', function(req, res) {
-    var productos = clientdb.collection('Productos');    
+    var productos = db.collection('Productos');    
     var contexto = {
                listaProductos: productos,
     };
     res.render('tienda',contexto);
 });
+
 
 //Ruta al resumen
 app.get('/resumen', function(req, res) {
