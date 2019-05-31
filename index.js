@@ -47,8 +47,6 @@ MongoClient.connect('mongodb+srv://@cluster0-iojdx.mongodb.net/tienda',
 
 
 var assert = require('assert');
-const url = 'mongodb://localhost:27017';
-const dbName = 'tienda';
 var clientdb=null;
 
 
@@ -64,7 +62,7 @@ app.get('/tienda/:tipo?', function(req, res) {
     if(req.params.tipo){
         query.tipo = req.params.tipo;
     }
-    var productos = clientdb.collection('productos');
+   // var productos = clientdb.collection('productos');
     productos.find(query)
              .toArray(function(err, docs) {
         var contexto = {
@@ -191,8 +189,3 @@ collection.find({})
     fs.writeFileSync('db.json', JSON.stringify)
 })
 */
-
-//3. Decirle por que puerto ecuchar  
-app.listen(3000, function(){
-console.log('Holi servidor');
-});
