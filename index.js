@@ -51,13 +51,6 @@ const url = 'mongodb://localhost:27017';
 const dbName = 'tienda';
 var clientdb=null;
 
-//Mongo: conectar (Paso 2)
-client.connect(function(err) {
-   assert.equal(null, err);
-   console.log("Conectado a la base de datos");
-   clientdb = client.db(dbName);
-  // client.close();
- });
 
 // 2. Crear la ruta inicial (Home, Taller 1)
 app.get('/',function(req,res){
