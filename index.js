@@ -64,7 +64,7 @@ app.get('/tienda/:tipo?', function(req, res) {
     if(req.params.tipo){
         query.tipo = req.params.tipo;
     }
-    var productos = clientdb.collection('Productos');
+    var productos = clientdb.collection('productos');
     productos.find(query)
              .toArray(function(err, docs) {
         var contexto = {
