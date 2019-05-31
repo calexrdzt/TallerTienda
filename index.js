@@ -46,17 +46,6 @@ MongoClient.connect('mongodb+srv://@cluster0-iojdx.mongodb.net/tienda',
 });
 
 
-var assert = require('assert');
-
-
-//Mongo: conectar (Paso 2)
-client.connect(function(err) {
-   assert.equal(null, err);
-   console.log("Conectado a la base de datos");
-   clientdb = client.db(dbName);
-  // client.close();
- });
-
 // 2. Crear la ruta inicial (Home, Taller 1)
 app.get('/',function(req,res){
 res.sendFile(__dirname+'/public/Taller1RodriguezChristian.html');
