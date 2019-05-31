@@ -26,12 +26,28 @@ app.engine('handlebars', exphbs({
 
 
 //Mongo: crear variables (Paso 1)
-var MongoClient = require('mongodb').MongoClient;
+var MongoClient = require('mongodb').MongoClient;  
+
+MongoClient.connect('mongodb+srv://@cluster0-iojdx.mongodb.net/tienda',
+    {
+        auth: {
+        user: 'calexrdzt',
+        password: 'vce0evgvxr0.'
+        }
+    },
+
+    function (err, client) {
+    if (err) throw err;
+
+    db = client.db('tienda');
+
+    // Iniciar servidor
+    app.listen(process.env.PORT || 1234);
+});
+
+
 var assert = require('assert');
-const url = 'mongodb://localhost:27017';
-const dbName = 'Tienda';
-const client = new MongoClient(url, { useNewUrlParser: true });
-var clientdb=null;
+
 
 //Mongo: conectar (Paso 2)
 client.connect(function(err) {
