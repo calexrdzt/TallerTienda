@@ -58,6 +58,7 @@ app.get('/tienda/:tipo?', function(req, res) {
     if(req.params.tipo){
         query.tipo = req.params.tipo;
     }
+
     var productos = clientdb.collection('Productos');
     productos.find(query)
              .toArray(function(err, docs) {
@@ -125,8 +126,9 @@ app.get('/experiencia', function(req, res) {
 
 //Ruta al tienda
 app.get('/tienda', function(req, res) {
+    var productos = clientdb.collection('Productos');    
     var contexto = {
-       
+               listaProductos: productos,
     };
     res.render('tienda',contexto);
 });
