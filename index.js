@@ -27,8 +27,8 @@ app.engine('handlebars', exphbs({
 
 //Mongo: crear variables (Paso 1)
 var MongoClient = require('mongodb').MongoClient;  
-
-MongoClient.connect('mongodb+srv://@cluster0-iojdx.mongodb.net/tienda',
+var clientdb=null;
+MongoClient.connect('mongodb+srv://cluster0-iojdx.mongodb.net/tienda',
     {
         auth: {
         user: 'calexrdzt',
@@ -39,7 +39,7 @@ MongoClient.connect('mongodb+srv://@cluster0-iojdx.mongodb.net/tienda',
     function (err, client) {
     if (err) throw err;
 
-    db = client.db('tienda');
+    clientdb = client.db('tienda');
 
     // Iniciar servidor
     app.listen(process.env.PORT || 1234);
@@ -47,7 +47,7 @@ MongoClient.connect('mongodb+srv://@cluster0-iojdx.mongodb.net/tienda',
 
 
 var assert = require('assert');
-var clientdb=null;
+
 
 
 // 2. Crear la ruta inicial (Home, Taller 1)
